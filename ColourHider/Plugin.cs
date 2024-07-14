@@ -15,6 +15,7 @@ namespace ColourHider
     {
         void Awake()
         {
+            //thanks to not a bird for doing this with harmony instead of the fuck ass way i done it before
             new Harmony(PluginInfo.GUID).PatchAll(Assembly.GetExecutingAssembly());
         }
     }
