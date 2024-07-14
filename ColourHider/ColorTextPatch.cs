@@ -7,7 +7,7 @@ namespace ColourHider
 {
     [HarmonyPatch(typeof(GrabbingColorPicker))]
     [HarmonyWrapSafe]
-    internal class idkfornow
+    internal class ColorTextPatch
     {
         [HarmonyPostfix]
         [HarmonyPatch("UpdateDisplay")]
