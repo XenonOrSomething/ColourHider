@@ -11,7 +11,7 @@ namespace ColourHider
     {
         [HarmonyPostfix]
         [HarmonyPatch("UpdateDisplay")]
-        public static void UpdateDisplayPatch(GrabbingColorPicker __instance, ref TextMeshProUGUI ___textR, ref TextMeshProUGUI ___textG, ref TextMeshProUGUI ___textB)
+        public static void UpdateDisplayPatch(ref TextMeshProUGUI ___textR, ref TextMeshProUGUI ___textG, ref TextMeshProUGUI ___textB)
         {
             ___textR.text = Random.Range(0, 9).ToString();
             ___textG.text = Random.Range(0, 9).ToString();
