@@ -23,15 +23,8 @@ namespace ColourHider
             
             MeshRenderer swatchRenderer = ___ColorSwatch.GetComponent<MeshRenderer>();
             swatchRenderer.material.color = new Color(Random.Range(0, 2), Random.Range(0, 2), Random.Range(0, 2));
-            /* dosent work
-            foreach (WardrobeInstance wardrobeInstance in CosmeticsController.instance.wardrobes)
-            {
-
-                MeshRenderer dollRenderer = wardrobeInstance.selfDoll.gameObject.GetComponent<MeshRenderer>();
-
-                dollRenderer.material.color = new Color(Random.Range(0, 2), Random.Range(0, 2), Random.Range(0, 2));
-            }
-            */
+            InterfaceCall.Call();  
         }
     }
+    
 }
